@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>index html</h1>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 navbar-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Webpage Title -->
+    <title>DocHub</title>
+    <link rel="stylesheet" href="./css/loader.css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="./css/aos.min.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/icon.png" />
+  </head>
+  <body>
+    <div class="loader-wraper">
+      <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+  <!--NavBar Start-->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <i class="fa-solid fa-dragon home_text"></i>
@@ -42,152 +55,179 @@
         </div>
         </nav>
 
-         <!-- Home -->
+    <!-- Home -->
     <section class="home py-5 d-flex align-items-center" id="header">
-        <video autoplay muted loop id="myVideo">
-          <source src="./files/videoplayback (1)_Trim.mp4" type="video/mp4">
-        </video>
-              <div class="container  text text-light py-5" data-aos="fade-right">
-                <h1 class="headline text">
-                  Build <span class="text-info">trust</span>  <br>
-                </h1>
-                <p class="para  py-3">
-                  The DocHub platform is a leading Document Verification platform <br> 
-                  designed to bring efficiency and security to your operations.
-                </p>
-        
-                <div class="my-3">
-                  <a class="btn bg-danger text-white" href="verify.html">Go Verify</a>
-                </div>
-                
-              </div>
-              <!-- end of container -->
-            </section>
-            <!-- end of home -->
-
-             <!-- Information -->
-    <section class="information">
-        <div class="container-fluid">
-          <div class="row text-light">
-            <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
-              <img src="files/undraw_investment_data_re_sh9x.svg" width="150">   
-              <h4 class="py-3">Less Cost</h4>
-              <p class="para-light">
-                with DocHub uploading any document cost only <span class="text-warning"> 0.01 &dollar; 😮</span>
-                so you can upload without caring about the Operation cost
-              </p>
-            </div>
-            <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
-              <img src="files/undraw_time_management_re_tk5w.svg" width="150">   
-              <h4 class="py-3">Fast Process</h4>
-              <p class="para-light">
-                Verfying Cirtificates  takes just <span class="text-warning"> 1 Second 😳 </span>
-              </p>
-            </div>
-            <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
-              <img src="files/securefiles.svg" width="150">   
-              <h4 class="py-3">Secure</h4>
-              <p class="para-light">
-                100% Secure & Transparent all operations With Blockchain Technology 🔒
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- end of container -->
-      </section>
-
-        <!-- About -->
-    <section id="about" class="about d-flex align-items-center text-light py-5" id="about">
-        <div class="container">
-          <div class="row d-flex align-items-center">
-            <div class="col-lg-7" data-aos="fade-right">
-              <p  class="main-header-section">ABOUT US</p>
-              <h1>
-                WE ARE TOP <br />
-                
-              </h1>
-              <p class="py-2 para-light">
-                Introducing "DocHub": A Blockchain-Based Project for Secure Document Storage
-                In today's digital age, it's more important than ever to keep our important documents safe and secure. But traditional storage methods such as physical filing cabinets or cloud storage services can be vulnerable to hacking, data breaches, and other security threats. That's where BlockSafe comes in. BlockSafe is a blockchain-based project that allows users to securely store their important documents in a decentralized, tamper-proof network.
-                With BlockSafe, users can upload their documents to the blockchain, which records the document's unique digital signature and stores it in a block that is linked to the previous block in the chain. This creates a secure and immutable record of the document's existence and ensures that it cannot be altered or deleted without the owner's permission.
-              </p>
-              <p class="py-2 para-light">
-                To access their documents, users simply need to log in to their BlockSafe account and provide their private key, which unlocks the block and allows them to view, download, or share their documents as needed.
-                BlockSafe also offers a range of additional security features, such as two-factor authentication, encryption, and redundant backups, to ensure that users' documents are protected from unauthorized access or loss.
-                So whether you're a small business owner looking to secure your financial records, a healthcare provider needing to store patient information securely, or simply someone who wants to keep their personal documents safe, BlockSafe provides a reliable and secure solution for document storage.
-                And with the power of blockchain technology behind it, you can trust that your documents are safe and secure, now and in the future.
-              </p>
-  
-              <div class="my-3">
-                <a class="btn bg-white" href="#your-link">Learn More</a>
-              </div>
-            </div>
-            <div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down">
-              <img
-                class="img-fluid"
-                src="./assets/images/about.jpg"
-                alt="about"
-              />
-            </div>
-          </div>
-          <!-- end of row -->
-        </div>
-        <!-- end of container -->
-      </section>
-      <!-- end of about -->
-      <div class="text-center text-lg-start py-4 pt-lg-0">
-        <p class="main-header-section">OUR WORK</p>
-        <h2 class="py-2">Explore unlimited possibilities</h2>
-        <p class="para-light">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Dignissimos dicta mollitia totam explicabo obcaecati quia
-          laudantium repudiandae.
+<video autoplay muted loop id="myVideo">
+  <source src="./files/videoplayback (1)_Trim.mp4" type="video/mp4">
+</video>
+      <div class="container  text text-light py-5" data-aos="fade-right">
+        <h1 class="headline text">
+          Build <span class="text-info">trust</span>  <br>
+        </h1>
+        <p class="para  py-3">
+          The DocHub platform is a leading Document Verification platform <br> 
+          designed to bring efficiency and security to your operations.
         </p>
 
+        <div class="my-3">
+          <a class="btn bg-danger text-white" href="verify.html">Go Verify</a>
+        </div>
+        
       </div>
-      <div class="col-6 text-start">
-        <i class="fas fa-briefcase fa-2x text-start"></i>
-        <h2
-          class="purecounter"
-          data-purecounter-start="0"
-          data-purecounter-end="128"
-          data-purecounter-duration="1"
-        >
-          1
-        </h2>
-        <p>UNIVERSITIES SERVED</p>
+      <!-- end of container -->
+    </section>
+    <!-- end of home -->
+
+    <!-- Information -->
+    <section class="information">
+      <div class="container-fluid">
+        <div class="row text-light">
+          <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
+            <img src="files/undraw_investment_data_re_sh9x.svg" width="150">   
+            <h4 class="py-3">Less Cost</h4>
+            <p class="para-light">
+              with DocHub uploading any document cost only <span class="text-warning"> 0.01 &dollar; 😮</span>
+              so you can upload without caring about the Operation cost
+            </p>
+          </div>
+          <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
+            <img src="files/undraw_time_management_re_tk5w.svg" width="150">   
+            <h4 class="py-3">Fast Process</h4>
+            <p class="para-light">
+              Verfying Cirtificates  takes just <span class="text-warning"> 1 Second 😳 </span>
+            </p>
+          </div>
+          <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
+            <img src="files/securefiles.svg" width="150">   
+            <h4 class="py-3">Secure</h4>
+            <p class="para-light">
+              100% Secure & Transparent all operations With Blockchain Technology 🔒
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="col-6">
-        <i class="fas fa-award fa-2x"></i>
-        <h2
-          class="purecounter"
-          data-purecounter-start="0"
-          data-purecounter-end="2917"
-          data-purecounter-duration="1"
-        >
-          1
-        </h2>
-        <p>VERIFIED CIRTIFACATES</p>
+      <!-- end of container -->
+    </section>
+    <!-- end of information -->
+
+    <!-- About -->
+    <section id="about" class="about d-flex align-items-center text-light py-5" id="about">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-7" data-aos="fade-right">
+            <p  class="main-header-section">ABOUT US</p>
+            <h1>
+              WE ARE TOP <br />
+              
+            </h1>
+            <p class="py-2 para-light">
+              Introducing "DocHub": A Blockchain-Based Project for Secure Document Storage
+              In today's digital age, it's more important than ever to keep our important documents safe and secure. But traditional storage methods such as physical filing cabinets or cloud storage services can be vulnerable to hacking, data breaches, and other security threats. That's where BlockSafe comes in. BlockSafe is a blockchain-based project that allows users to securely store their important documents in a decentralized, tamper-proof network.
+              With BlockSafe, users can upload their documents to the blockchain, which records the document's unique digital signature and stores it in a block that is linked to the previous block in the chain. This creates a secure and immutable record of the document's existence and ensures that it cannot be altered or deleted without the owner's permission.
+            </p>
+            <p class="py-2 para-light">
+              To access their documents, users simply need to log in to their BlockSafe account and provide their private key, which unlocks the block and allows them to view, download, or share their documents as needed.
+              BlockSafe also offers a range of additional security features, such as two-factor authentication, encryption, and redundant backups, to ensure that users' documents are protected from unauthorized access or loss.
+              So whether you're a small business owner looking to secure your financial records, a healthcare provider needing to store patient information securely, or simply someone who wants to keep their personal documents safe, BlockSafe provides a reliable and secure solution for document storage.
+              And with the power of blockchain technology behind it, you can trust that your documents are safe and secure, now and in the future.
+            </p>
+
+            <div class="my-3">
+              <a class="btn bg-white" href="#your-link">Learn More</a>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down">
+            <img
+              class="img-fluid"
+              src="./assets/images/about.jpg"
+              alt="about"
+            />
+          </div>
+        </div>
+        <!-- end of row -->
       </div>
-      <div class="col-6">
-        <i class="fas fa-users fa-2x"></i>
-        <h2
-          class="purecounter"
-          data-purecounter-start="0"
-          data-purecounter-end="1255"
-          data-purecounter-duration="1"
-        >
-          1
-        </h2>
-        <p>ACTIVE EXPORTERS</p>
+      <!-- end of container -->
+    </section>
+    <!-- end of about -->
+
+    <!-- Work -->
+    <section id="ourwork"  class="work d-flex align-items-center py-5">
+      <div class="container text-light">
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right">
+            <img class="img-fluid" src="./assets/images/work.jpg" alt="work" />
+          </div>
+          <div class="col-lg-5 d-flex align-items-center px-4 py-3" data-aos="zoom-in">
+            <div class="row">
+              <div class="text-center text-lg-start py-4 pt-lg-0">
+                <p class="main-header-section">OUR WORK</p>
+                <h2 class="py-2">Explore unlimited possibilities</h2>
+                <p class="para-light">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Dignissimos dicta mollitia totam explicabo obcaecati quia
+                  laudantium repudiandae.
+                </p>
+              </div>
+              <div class="container" data-aos="fade-up">
+                <div class="row g-5">
+                  <div class="col-6 text-start">
+                    <i class="fas fa-briefcase fa-2x text-start"></i>
+                    <h2
+                      class="purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="128"
+                      data-purecounter-duration="1"
+                    >
+                      1
+                    </h2>
+                    <p>UNIVERSITIES SERVED</p>
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-award fa-2x"></i>
+                    <h2
+                      class="purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="2917"
+                      data-purecounter-duration="1"
+                    >
+                      1
+                    </h2>
+                    <p>VERIFIED CIRTIFACATES</p>
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-users fa-2x"></i>
+                    <h2
+                      class="purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="1255"
+                      data-purecounter-duration="1"
+                    >
+                      1
+                    </h2>
+                    <p>ACTIVE EXPORTERS</p>
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-clock fa-2x"></i>
+                    <h2
+                      class="purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="1157"
+                      data-purecounter-duration="1"
+                    >
+                      1
+                    </h2>
+                    <p>GOOD REVIEWS</p>
+                  </div>
+                </div>
+              </div>
+              <!-- end of container -->
+            </div>
+            <!-- end of row -->
+          </div>
+          <!-- end of col-lg-5 -->
+        </div>
+        <!-- end of row -->
       </div>
-      <div class="col-6">
-        <i class="fas fa-clock fa-2x"></i>
-        <h2
-          class="purecounter"
-          data-purecounter-start="0"
-          data-purecounter-end="1157"
-          data-purecounter-duration="1"
-        >
-</body>
-</html>
+      <!-- end of container -->
+    </section>
+    <!-- end of work -->
