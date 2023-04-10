@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/loader.css" />
+  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+  <script src="node_modules\web3\dist\web3.min.js"></script>
+  <script src="js/App.js"></script>
+  <script src="js/qrcode.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="./css/aos.min.css" rel="stylesheet" />
+  <link rel="icon" href="./assets/images/icon.png" />
+  <title>Upload Document</title>
+</head>
+
+<body>
+  <!-- Loading Circular Dots -->
+  <div class="loader-wraper">
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!--NavigationBar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="fa-solid fa-dragon home_text"></i>
+        <span class="home_text">Doc</span>
+        Hub
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="upload.html">Upload</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="verify.html">Verify</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="delete.html">Delete</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="admin.html">Admin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Team</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <button id="loginButton" onclick="connect()" class="btn main-button">
+            Login
+          </button>
+          <button id="logoutButton" onclick="disconnect()" class="btn main-button">
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Body -->
+  <div class="container">
+    <div class="alert alert-danger d-none mt-2">
+      Please download MetaMask at
+      <a target="_blank" href="https://metamask.io/download">Metamask Site</a>
+    </div>
+    <!-- Wallet information -->
+    <div class="row content m-1">
+      <div data-aos="fade-down" class="box wallet-status col-lg-12 d-flex flex-column my-2">
+        <i class="fa-brands fa-connectdevelop icon"></i>
+        <span id="Exporter-info" class="p-1 mb-2"></span>
+        <span id="userAddress" class="p-1">
+          <span class="text-warning"></span>
+        </span>
+        <span id="network" class="p-1">
+          <span class="text-warning"></span>
+        </span>
+        <span id="userBalance" class="p-1">
+          <span class="text-warning"></span>
+        </span>
+      </div>
+
+
+</body>
+
+</html>
