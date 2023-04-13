@@ -285,6 +285,73 @@ async function get_Sha3() {
   }
 }
 
+function print_info(result, is_verified) {
+  //Default Image for not Verified Docunets
+  document.getElementById('student-document').src = './files/notvalid.svg'
+  $('#loader').hide()
+  // when document not verfied
+  if (!is_verified) {
+    // document.getElementById('download-document').classList.add('d-none')
+    $('#download-document').hide()
+    $('#doc-status').html(`<h3 class="text-danger">
+        Certificate not Verified 😕
+         <i class="text-danger  fa fa-times-circle" aria-hidden="true"></i>
+        </h3>`)
+    $('#file-hash').html(
+      `<span class="text-info"><i class="fa-solid fa-hashtag"></i></span> ${truncateAddress(
+        window.hashedfile,
+      )}`,
+    )
+    $('#college-name').hide()
+    $('#contract-address').hide()
+    $('#time-stamps').hide()
+    $('#blockNumber').hide()
+    $('.transaction-status').show()
+  } else {
+    $('#download-document').show()
+    // when document verfied
+    $('#college-name').show()
+    $('#contract-address').show()
+    $('#time-stamps').show()
+    $('#blockNumber').show()
+
+    var t = new Date(1970, 0, 1)
+    t.setSeconds(result[1])
+    console.log(result[1])
+    t.setHours(t.getHours() + 3)
+    // hide loader
+    $('#loader').hide()
+    $('#doc-status').html(`<h3 class="text-info">
+         Certificate Verified Successfully 😊
+         <i class="text-info fa fa-check-circle" aria-hidden="true"></i>
+        </h3>`)
+    $('#file-hash').html(
+      `<span class="text-info"><i class="fa-solid fa-hashtag"></i></span> ${truncateAddress(
+        window.hashedfile,
+      )}`,
+    )
+    $('#college-name').html(
+      `<span class="text-info"><i class="fa-solid fa-graduation-cap"></i></span> ${result[2]}`,
+    )
+    $('#contract-address').html(
+      `<span class="text-info"><i class="fa-solid fa-file-contract"></i> </span>${truncateAddress(
+        window.CONTRACT.address,
+      )}`,
+    )
+    $('#time-stamps').html(
+      `<span class="text-info"><i class="fa-solid fa-clock"></i> </span>${t}`,
+    )
+    $('#blockNumber').html(
+      `<span class="text-info"><i class="fa-solid fa-cube"></i></span> ${result[0]}`,
+    )
+    document.getElementById('student-document').src =
+      'https://ipfs.io/ipfs/' + result[3]
+    document.getElementById('download-document').href = document.getElementById(
+      'student-document',
+    ).src
+    $('.transaction-status').show()
+  }
+}
 
 function truncateAddress(address) {
   if (!address) {
