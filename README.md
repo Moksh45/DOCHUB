@@ -18,4 +18,22 @@ This project aims to create a secure and decentralized system for document verif
 - Ganache or any other Ethereum network client
 - IPFS client (optional)
 
+## Installation
 
+1. Clone this repository: 
+
+
+2. Install the required packages:
+cd BlockChain-Based-Document-Verfication-With-IPFS
+npm install
+
+3. Open the application in your browser using Live Server Extension.
+
+## Usage
+
+1. The owner of the system must first add an exporter to the list of authorized parties. This is done by clicking on the "Add Exporter" button and entering the exporter's Ethereum address.
+2. Upload a document to the system by clicking on the "Upload Document" button and selecting a file from your computer. The document will be encrypted and stored in the IPFS network, and its hash will be recorded in the Blockchain.
+3. Verify a document by clicking on the "Verify Document" button and entering its unique identifier (hash) in the input field. The system will retrieve the document from the IPFS network, decrypt it, and compare its hash with the one recorded in the Blockchain.
+4. The system will display a message indicating whether the document is authentic or not.
+
+Thank you for using our system!
