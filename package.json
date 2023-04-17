@@ -1,16 +1,16 @@
 {
-    "name": "eth",
-    "version": "1.0.0",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "ipfs-http-client": "^60.0.0",
-      "web3": "^1.7.0"
-    },
-    "keywords": [],
-    "description": ""
-  }
+  "name": "eth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ipfs-http-client": "^60.0.0",
+    "web3": "^1.7.0"
+  },
+  "keywords": [],
+  "description": ""
+}
