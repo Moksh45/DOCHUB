@@ -1,7 +1,4 @@
-# **Note** 
-Unfortunately, the video link is not working due to unknown reasons. Therefore, we have uploaded a new video on YouTube, and you can access it through this link : https://youtu.be/U1FTu0NoB7Q 
 
-To access the hosted website, please follow this link: https://manishjha-04.github.io/GFG_Vision/
 
 # BlockChain Based Documents Verification System With-IPFS
 
